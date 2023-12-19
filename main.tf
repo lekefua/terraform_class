@@ -30,3 +30,4 @@ resource "azurerm_mssql_database" "mysql-db" {
   tags = {
     foo = "bar"
   }
+}
