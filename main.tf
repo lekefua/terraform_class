@@ -16,9 +16,18 @@ resource "azurerm_storage_account" "tf-storageaccount" {
   }
 }
 
-resource "azurerm_mssql_database" "mysql-db" {
+resource "azurerm_mssql_server" "mysql-server" {
+  name                         = "phil-mysqlserver"
+  resource_group_name          = azurerm_resource_group.tf-test-philippe.name
+  location                     = azurerm_resource_group.tf-test-philippe.location
+  version                      = "12.0"
+  administrator_login          = "admin"
+  administrator_login_password = "really_good_password"
+}
+
+resource "azurerm_mssql_database" "phil_mysql-db" {
   name           = "phil-mcit-db"
-  server_id      = azurerm_mssql_server.test-mysql-server.id
+  server_id      = azurerm_mssql_server.mysql-server.id
   collation      = "SQL_Latin1_General_CP1_CI_AS"
   license_type   = "LicenseIncluded"
   max_size_gb    = 4
