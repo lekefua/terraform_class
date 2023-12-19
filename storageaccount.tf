@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "tf-storageaccount" {
-  name                     = "storageaccountphilmcit2023"
+  name                     = "samcitphil2023"
   resource_group_name      = azurerm_resource_group.tf-test-philippe.name
   location                 = azurerm_resource_group.tf-test-philippe.location
   account_tier             = "Standard"
