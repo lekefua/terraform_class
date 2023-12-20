@@ -1,6 +1,7 @@
 variable "subscription_id"{
   type=string
 }
+
 variable "client_id"{
   type=string
 }
@@ -10,6 +11,7 @@ variable "client_secret"{
 variable "tenant_id"{
   type=string
 }
+
 variable "object_id"{
   type=string
 }
