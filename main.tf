@@ -20,15 +20,7 @@ resource "azurerm_mssql_server" "tf-test-mysqlserver" {
   tags = {
     environment = "production"
   }
-}
-
-
-  subscription_id=var.subscription_id
-  client_id=var.client_id
-  client_secret=var.client_secret
-  tenant_id=var.tenant_id
-  object_id=var.object_id
-  
+} 
   
 resource "azurerm_sql_active_directory_administrator" "azuread-admin" {
   server_name         = "azurerm_sql_server.tf-test-mysqlserver.name"
