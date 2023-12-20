@@ -15,4 +15,5 @@ provider "azurerm"{
   client_id=var.client_id
   client_secret=var.client_secret
   tenant_id=var.tenant_id
+  object_id=var.object_id
 }
