@@ -34,7 +34,7 @@ variable "MyName" {
   default="philippe"
 }
 
-variable "cross_tenant_replication_enabled" {
+variable "cross_tenant_replication" {
   type=bool
   default=false
 }
