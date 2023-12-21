@@ -29,7 +29,12 @@ variable "countNumber"{
   default=0
 }
 
-variable "MyName"
+variable "MyName" {
   type=string
   default=philippe
+}
+
+variable "cross_tenant_replication_enabled" {
+  type=boolean
+  default=false
 }
