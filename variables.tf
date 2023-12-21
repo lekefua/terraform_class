@@ -31,7 +31,7 @@ variable "countNumber"{
 
 variable "MyName" {
   type=string
-  default=philippe
+  default="philippe"
 }
 
 variable "cross_tenant_replication_enabled" {
