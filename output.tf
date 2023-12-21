@@ -16,5 +16,9 @@ output "fourthprint"{
 }
 
 output "fifthprint"
-  value = lengthofspare_gloves
+  value = local.spare_gloves
+}
+
+output "sixthprint:
+  value = local.lengthofspare_gloves
 }
