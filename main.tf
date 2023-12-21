@@ -28,6 +28,7 @@ resource "azurerm_storage_account" "tf-storageaccount" {
   location                 = azurerm_resource_group.tf-rg-philippe.location
   account_tier             = "Standard"
   account_replication_type = "GRS"
+  cross_tenant_replication_enabled =var.cross_tenant_replication_enabled
 
   tags = {
     environment = "staging"
