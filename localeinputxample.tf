@@ -1,4 +1,4 @@
-locals {​
+local {​
 
   service_name = "forum"​
   owner        = "Community Team"​
