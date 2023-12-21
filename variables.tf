@@ -38,3 +38,13 @@ variable "cross_tenant_replication" {
   type=bool
   default=false
 }
+
+variable "account_tier"{
+  type=string
+  default="Standard"
+}
+
+variable "account_replication_type"{
+  type=string
+  default "GRS"
+}
