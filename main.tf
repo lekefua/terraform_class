@@ -26,8 +26,8 @@ resource "azurerm_storage_account" "tf-storageaccount" {
   name                     = "${var.MyName}storageaccount${var.countNumber}"
   resource_group_name      = azurerm_resource_group.tf-rg-philippe.name
   location                 = azurerm_resource_group.tf-rg-philippe.location
-  account_tier             = "Standard"
-  account_replication_type = "GRS"
+  account_tier             = var.account_tier
+  account_replication_type = var.account_replication_type
   cross_tenant_replication_enabled =var.cross_tenant_replication
 
   tags = {
