@@ -46,7 +46,7 @@ variable "account_tier"{
 
 variable "account_replication_type"{
   type=string
-  default "GRS"
+  default="GRS"
 }
 
 vaiable "resource_group"{
