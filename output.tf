@@ -10,7 +10,7 @@ output "Number of characters in the team name"{
   value = local.lengthofservice_name
 
 }
-output "Number of characters in the Staidum name"{
+output "Number of characters in the Stadium name"{
   value = local.lengthofowner
 
 }
