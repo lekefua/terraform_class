@@ -35,6 +35,6 @@ variable "MyName" {
 }
 
 variable "cross_tenant_replication_enabled" {
-  type=boolean
+  type=bool
   default=false
 }
