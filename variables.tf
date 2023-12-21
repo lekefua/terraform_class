@@ -28,3 +28,8 @@ variable "countNumber"{
   type=number
   default=0
 }
+
+variable "MyName"
+  type=string
+  default=philippe
+}
