@@ -1,24 +1,24 @@
-output "print"{
+output "Team Name"{
   value = local.service_name
 
 }
-output "secondprint"{
+output "Stadium"{
     value = local.owner
 
 }
-output "thirdprint"{
+output "Number of characters in the team name"{
   value = local.lengthofservice_name
 
 }
-output "fourthprint"{
+output "Number of characters in the Staidum name"{
   value = local.lengthofowner
 
 }
 
-output "fifthprint"{
+output "Number of spare gloves at the field"{
   value = local.spare_gloves
 }
 
-output "sixthprint"{
+output "pointless output"{
   value = local.lengthofspare_gloves
 }
