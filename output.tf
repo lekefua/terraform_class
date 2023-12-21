@@ -15,10 +15,10 @@ output "fourthprint"{
 
 }
 
-output "fifthprint"
+output "fifthprint"{
   value = local.spare_gloves
 }
 
-output "sixthprint:
+output "sixthprint"{
   value = local.lengthofspare_gloves
 }
