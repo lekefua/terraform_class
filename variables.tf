@@ -25,5 +25,5 @@ variable "db_user"{
 }
 
 variable "countNumber"{
-  type=int
+  type=number
 }
