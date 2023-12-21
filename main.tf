@@ -9,7 +9,7 @@ resource "azurerm_mssql_server" "tf-test-mysqlserver" {
   location                     = azurerm_resource_group.tf-rg-philippe.location
   version                      = "12.0"
   administrator_login          = "admin"
-  administrator_login_password = "goodpassword123"
+  administrator_login_password = var.db_password
   minimum_tls_version          = "1.2"
 
   azuread_administrator {
