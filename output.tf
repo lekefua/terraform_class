@@ -22,3 +22,7 @@ output "Number_of_spare_gloves_at_the_field"{
 output "pointless_output"{
   value = local.lengthofspare_gloves
 }
+
+output "some_number"{
+  value = var.countNumber
+}
