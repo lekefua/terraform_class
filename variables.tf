@@ -23,3 +23,7 @@ variable "db_password"{
 variable "db_user"{
   type=string
 }
+
+variable "countNumber"{
+  type=int
+}
