@@ -48,3 +48,9 @@ variable "account_replication_type"{
   type=string
   default "GRS"
 }
+
+vaiable "resource_group"{
+  type=string
+  default="tf-rg-philippe"
+
+}
