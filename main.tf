@@ -21,3 +21,14 @@ resource "azurerm_mssql_server" "tf-test-mysqlserver" {
     environment = "production"
   }
 } 
+
+resource "azurerm_storage_account" "tf-storageaccount" {
+  name                     = "storageaccountname${var.countNumber}"
+  resource_group_name      = azurerm_resource_group.tf-rg-philippe.name
+  location                 = azurerm_resource_group.tf-rg-philippe.location
+  account_tier             = "Standard"
+  account_replication_type = "GRS"
+
+  tags = {
+    environment = "staging"
+  }
