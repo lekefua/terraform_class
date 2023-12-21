@@ -46,7 +46,7 @@ variable "account_replication_type"{
   type=string
 }
 
-vaiable "resource_group"{
+variable "resource_group"{
   type=string
 
 }
