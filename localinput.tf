@@ -1,7 +1,7 @@
 locals {
 
-  service_name = "forum"
-  owner = "Community Team"
+  service_name = "Forum"
+  owner = "Wildcats"
   spare_gloves = "fourteen"
   lengthofservice_name=length(local.service_name)
   lengthofowner=length(local.owner)
