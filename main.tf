@@ -23,7 +23,7 @@ resource "azurerm_mssql_server" "tf-test-mysqlserver" {
 } 
 
 resource "azurerm_storage_account" "tf-storageaccount" {
-  name                     = "storageaccount${var.countNumber}"
+  name                     = "${var.MyName}storageaccount${var.countNumber}"
   resource_group_name      = azurerm_resource_group.tf-rg-philippe.name
   location                 = azurerm_resource_group.tf-rg-philippe.location
   account_tier             = "Standard"
