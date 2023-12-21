@@ -31,7 +31,6 @@ variable "countNumber"{
 
 variable "MyName" {
   type=string
-  default="philippe"
 }
 
 variable "cross_tenant_replication" {
@@ -41,16 +40,13 @@ variable "cross_tenant_replication" {
 
 variable "account_tier"{
   type=string
-  default="Standard"
 }
 
 variable "account_replication_type"{
   type=string
-  default="GRS"
 }
 
 vaiable "resource_group"{
   type=string
-  default="tf-rg-philippe"
 
 }
