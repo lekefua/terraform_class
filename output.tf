@@ -1,4 +1,4 @@
-output "Team Name"{
+output "Team_Name"{
   value = local.service_name
 
 }
@@ -6,19 +6,19 @@ output "Stadium"{
     value = local.owner
 
 }
-output "Number of characters in the team name"{
+output "Number_of_characters_in_the_team_name"{
   value = local.lengthofservice_name
 
 }
-output "Number of characters in the Stadium name"{
+output "Number_of_characters_in_the_Stadium_name"{
   value = local.lengthofowner
 
 }
 
-output "Number of spare gloves at the field"{
+output "Number_of_spare_gloves_at_the_field"{
   value = local.spare_gloves
 }
 
-output "pointless output"{
+output "pointless_output"{
   value = local.lengthofspare_gloves
 }
