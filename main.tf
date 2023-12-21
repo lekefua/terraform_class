@@ -32,3 +32,4 @@ resource "azurerm_storage_account" "tf-storageaccount" {
   tags = {
     environment = "staging"
   }
+}
