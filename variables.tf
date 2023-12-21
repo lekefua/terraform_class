@@ -26,4 +26,5 @@ variable "db_user"{
 
 variable "countNumber"{
   type=number
+  default=0
 }
