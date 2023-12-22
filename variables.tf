@@ -31,6 +31,7 @@ variable "countNumber"{
 
 variable "MyName" {
   type=string
+  default="mybutt"
 }
 
 variable "cross_tenant_replication" {
