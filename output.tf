@@ -31,6 +31,6 @@ output "pieces_list"{
   value = var.pieces
 }
 
-output "staging environment"{
+output "staging_environment"{
   value = var.environment
 }
