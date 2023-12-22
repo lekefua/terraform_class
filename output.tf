@@ -26,3 +26,11 @@ output "pointless_output"{
 output "some_number"{
   value = var.countNumber
 }
+
+output "pieces_list"{
+  value = var.pieces
+}
+
+output "staging environment"{
+  value = var.environment
+}
