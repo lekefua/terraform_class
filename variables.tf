@@ -54,7 +54,7 @@ variable "resource_group"{
 
 variable "pieces"{
   type=list
-  default = "turbo", "coilovers", "exhaust manifold", "carburator"
+  default = ["turbo", "coilovers", "exhaust manifold", "carburator"]
 
 }
 
