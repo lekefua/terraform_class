@@ -51,3 +51,14 @@ variable "resource_group"{
   type=string
 
 }
+
+variable "pieces"{
+  type=list
+  default = [turbo, coilovers, exhaust manifold, carburator]
+
+}
+
+variable "environment"{
+  type=string
+  default="dev-only"
+}
