@@ -51,3 +51,7 @@ output "numbers1-10"{
 output "sumofnumbers"{
   value=sum([for numbers in local.variousnumbers:numbers])
 }
+
+output "numberlist_2"{
+  value=var.numberlist_var
+}
