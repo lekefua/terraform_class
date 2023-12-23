@@ -36,5 +36,14 @@ output "staging_environment"{
 }
 
 output "list_of_winter_sports"{
-	value=[for sport in local.winter_sports_list:sport]
+  value=[for sport in local.winter_sports_list:sport]
+}
+
+output "Best_meals_in_Canada"{
+  value =[for meals in local.canadas_best_meals:meals]
+}
+
+output "numbers1-10"{
+  value=[for numbers in listofnumbers:numbers]
+
 }
