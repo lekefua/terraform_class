@@ -34,3 +34,7 @@ output "pieces_list"{
 output "staging_environment"{
   value = var.environment
 }
+
+output "List_of_winter_sports"
+  value = local.winter_sports_list
+}
