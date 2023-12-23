@@ -10,5 +10,5 @@ locals {
   canadas_best_meals = ["poutine", "smoke meat", "maple syrup", "butter chicken", "tourtiere", "sugar pie", "donair", "street meat", "steamie all dress", "kraft dinner"]
   listofnumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   variousnumbers = [150, 200, 150] 
-  cluster_names = ["k8syvr", "k8syyz", "k8sycg", k8syul"]
+  cluster_names = ["k8syvr", "k8syyz", "k8sycg", "k8syul"]
 }
