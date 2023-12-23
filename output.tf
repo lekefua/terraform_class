@@ -35,6 +35,6 @@ output "staging_environment"{
   value = var.environment
 }
 
-output "loop_output"{
+output "list_of_winter_sports"{
 	value=[for sport in local.winter_sports_list:sport]
 }
