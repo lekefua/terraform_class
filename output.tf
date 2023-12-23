@@ -38,3 +38,7 @@ output "staging_environment"{
 output "List_of_winter_sports"{
   value = local.winter_sports_list
 }
+
+output "loop_output"{
+	value=[for xyz in local.winter_sports_list:sport]
+}
