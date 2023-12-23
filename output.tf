@@ -55,3 +55,7 @@ output "sumofnumbers"{
 output "numberlist_2"{
   value=var.numberlist_var
 }
+
+output "sumofnumberlist_2"{
+  value=sum(var.numberlist_var)
+}
