@@ -40,5 +40,5 @@ output "List_of_winter_sports"{
 }
 
 output "loop_output"{
-	value=[for xyz in local.winter_sports_list:sport]
+	value=[for sport in local.winter_sports_list:sport]
 }
