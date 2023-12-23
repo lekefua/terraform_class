@@ -7,6 +7,6 @@ locals {
   lengthofowner=length(local.owner)
   lengthofspare_gloves=length(local.spare_gloves)
   winter_sports_list = ["hockey", "snowboarding", "ice hockey", "day drinking on a sunday"]
-  canadas_best_meals = ["poutine', "smoke meat", "maple syrup", "butter chicken", "tourtiere", "sugar pie", "donair", "street meat", "steamie all dress", "kraft dinner"]
+  canadas_best_meals = ["poutine", "smoke meat", "maple syrup", "butter chicken", "tourtiere", "sugar pie", "donair", "street meat", "steamie all dress", "kraft dinner"]
   listofnumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 }
