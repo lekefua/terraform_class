@@ -62,3 +62,8 @@ variable "environment"{
   type=string
   default="dev-only"
 }
+
+variable "numberlist_var"{
+  type=list
+  default=[150,150,150]
+}
