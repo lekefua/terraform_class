@@ -44,6 +44,6 @@ output "Best_meals_in_Canada"{
 }
 
 output "numbers1-10"{
-  value=[for numbers in listofnumbers:numbers]
+  value=[for numbers in local.listofnumbers:numbers]
 
 }
