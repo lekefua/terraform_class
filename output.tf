@@ -57,5 +57,5 @@ output "numberlist_2"{
 }
 
 output "sumofnumberlist_2"{
-  value=sum(for numbers in var.numberlist_var:numbers)
+  value=sum([for numbers in var.numberlist_var:numbers])
 }
