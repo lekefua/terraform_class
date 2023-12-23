@@ -47,3 +47,7 @@ output "numbers1-10"{
   value=[for numbers in local.listofnumbers:numbers]
 
 }
+
+output "sumofnumbers"{
+  value=sum[for numbers in local.variousnumbers:numbers]
+}
