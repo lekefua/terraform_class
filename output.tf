@@ -49,5 +49,5 @@ output "numbers1-10"{
 }
 
 output "sumofnumbers"{
-  value=sum[for numbers in local.variousnumbers:numbers]
+  value=sum([for numbers in local.variousnumbers:numbers])
 }
