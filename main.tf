@@ -23,7 +23,10 @@ resource "azurerm_mssql_server" "tf-test-mysqlserver" {
 } 
 
 resource "azurerm_storage_account" "tf-storageaccount" {
-  name                     = "${var.MyName}storageaccount${var.countNumber}"
+ // count                 = length(var.Storage_list)
+  // name                  = var.Storage_list[count.index].name
+  for_each                 = toset(var.Storage_list)
+  name                     =each.value
   resource_group_name      = azurerm_resource_group.tf-rg-philippe.name
   location                 = azurerm_resource_group.tf-rg-philippe.location
   account_tier             = var.account_tier
