@@ -67,3 +67,9 @@ variable "numberlist_var"{
   type=list
   default=[150,150,150]
 }
+
+
+ variable "Storage_list" {
+  type = list
+  default = ["philippemcitredston1", "philippemcitredston2","philippemcitredston3", "philippemcitredston4", "philippemcitredston5" ]
+ }
