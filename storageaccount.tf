@@ -1,6 +1,4 @@
 
-resource "azurerm_resource_group" "tf-rg-philippe"
-
 resource "azurerm_storage_account" "tf-storageaccount" {
  // count                 = length(var.Storage_list)
   // name                  = var.Storage_list[count.index].name
