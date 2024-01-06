@@ -23,7 +23,8 @@ resource "azurerm_mssql_server" "tf-test-mysqlserver" {
 } 
 
 locals {
-name_of_storage_acc_list = ["philippemcitredston1", "philippemcitredston2","philippemcitredston3", "philippemcitredston4", "philippemcitredston5" ]}
+name_of_storage_acc_list = ["philippemcitredston1", "philippemcitredston2","philippemcitredston3", "philippemcitredston4", "philippemcitredston5" ]
+}
 
 resource "azurerm_kubernetes_cluster" "batchabcd" {
   for_each            = {for cluster in local.name_of_storage_acc_list: cluster=>cluster}
