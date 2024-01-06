@@ -22,6 +22,17 @@ resource "azurerm_mssql_server" "tf-test-mysqlserver" {
   }
 } 
 
+locals {
+name_of_storage_acc_list = = ["philippemcitredston1", "philippemcitredston2","philippemcitredston3", "philippemcitredston4", "philippemcitredston5" ]}
+
+resource "azurerm_storage_account" "local-input-storage" {
+  for_each            = {for cluster in local.name_of_storage_acc_list: cluster=>cluster}
+  name                = "${var.prefix}cluster"
+  location            = azurerm_resource_group.tf-rg-philippe.location
+  resource_group_name = azurerm_resource_group.tf-rg-philippe.name
+  dns_prefix          = "exampleaks1"
+}
+
 resource "azurerm_storage_account" "tf-storageaccount" {
  // count                 = length(var.Storage_list)
   // name                  = var.Storage_list[count.index].name
