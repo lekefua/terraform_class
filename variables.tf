@@ -73,3 +73,8 @@ variable "numberlist_var"{
   type = list
   default = ["philippemcitredston1", "philippemcitredston2","philippemcitredston3", "philippemcitredston4", "philippemcitredston5" ]
  }
+
+variable "prefix"{
+ type=string
+ default="mcit"
+}
