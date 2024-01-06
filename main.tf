@@ -20,10 +20,9 @@ resource "azurerm_mssql_server" "tf-test-mysqlserver" {
   tags = {
     environment = "production"
   }
-} 
 
 locals {
-name_of_storage_acc_list = ["philippemcitredston1", "philippemcitredston2","philippemcitredston3", "philippemcitredston4", "philippemcitredston5" ]
+name_of_storage_acc_list = ["philippemcitredston1", "philippemcitredston2","philippemcitredston3", "philippemcitredston4", "philippemcitredston5"]
 }
 
 resource "azurerm_kubernetes_cluster" "batchabcd" {
@@ -32,6 +31,5 @@ resource "azurerm_kubernetes_cluster" "batchabcd" {
   location            = azurerm_resource_group.tf-rg-philippe.location
   resource_group_name = azurerm_resource_group.tf-rg-philippe.name
   dns_prefix          = "exampleaks1"
+  }
 }
-
-
