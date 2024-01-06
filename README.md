@@ -18,7 +18,7 @@ In the Azure Portal, navigate to the search bar and search “Subscriptions”. 
 ![image](https://github.com/gd-jackstraw/terraform_class/assets/143850151/a212ebc7-e84d-4512-a0ae-edcbaf2930dc)
 
 
-Navigate to the search bar and enter “App Registrations” and select New Registration. Enter a name and register the app. Take note of the following: Application (client) ID and Directory (tenant) ID
+Navigate to the search bar and enter “App Registrations” and select New Registration.
 
 
 ![image](https://github.com/gd-jackstraw/terraform_class/assets/143850151/ee0e184a-9456-4911-9500-1d2250203e2a)
